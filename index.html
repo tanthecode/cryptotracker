@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Price Tracker</h1>
+        <input type="text" id="search" placeholder="Search for a cryptocurrency...">
+        <table id="crypto-table-container">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price (USD)</th>
+                    <th>Change (24h)</th>
+                </tr>
+            </thead>
+            <tbody id="crypto-table">
+            </tbody>
+        </table>
+        <p id="selected-crypto"></p>
+        <div id="chart-container">
+            <canvas id="price-chart"></canvas>
+        </div>
+        <div id="sentiment-container">
+            <p>Market Sentiment: <span id="sentiment-value"></span></p>
+        </div>
+        <p id="error-message">Unable to load chart. Please try again later.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
